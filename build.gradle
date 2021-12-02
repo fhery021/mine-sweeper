@@ -31,5 +31,6 @@ sonarqube {
         property "sonar.projectKey", "fhery021_mine-sweeper"
         property "sonar.organization", "fhery021"
         property "sonar.host.url", "https://sonarcloud.io"
+        property 'sonar.tests', "src/test"
     }
 }
