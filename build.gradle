@@ -27,11 +27,6 @@ test {
     useJUnitPlatform()
 }
 
-checkstyle {
-    toolVersion '9.2'
-}
-
-
 jacocoTestReport {
     reports {
         xml.enabled true
