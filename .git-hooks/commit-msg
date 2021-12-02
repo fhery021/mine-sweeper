@@ -1,9 +1,6 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-commit_message="$1"
-# exit with a non zero exit code in case of an invalid commit message
+# fix for windows systems
+PATH="/c/Program Files/nodejs:$HOME/AppData/Roaming/npm/:$PATH"
 
-# use git-conventional-commits, see https://github.com/qoomon/git-conventional-commits
-git-conventional-commits commit-msg-hook "$commit_message"
-
-# TODO Overwrite or copy this file to your local repository directory/.git/hooks
+git-conventional-commits commit-msg-hook "$1"
