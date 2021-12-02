@@ -105,9 +105,9 @@ Or:
 
 ## 📈 Progress
 
-- 📌 TODO 1x1 Game Board
+- 🔧 1x1 Game Board
 - 📌 On Every 2 seconds draw the track - Game.drawTrack()
-- 📌 TODO 2x2 Game Board
-- 📌 TODO 3x3 Game Board
+- 📌 2x2 Game Board
+- 📌 3x3 Game Board
 
 > Example entries in the progress: - ✔ Done 🔧 In Progress 📌 TODO
