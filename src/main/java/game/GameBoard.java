@@ -1,6 +1,14 @@
 package game;
 
 public class GameBoard {
-    public void placeBomb(int i) {
+
+    private char content = '_';
+
+    public void placeBomb() {
+        content = 'X';
+    }
+
+    public char getContent() {
+        return content;
     }
 }
