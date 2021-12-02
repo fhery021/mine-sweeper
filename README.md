@@ -1,7 +1,6 @@
 # 🥋  Mine Sweeper Kata
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fhery021_mine-sweeper&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)
-[![![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fhery021_mine-sweeper&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=fhery021_mine-sweeper&metric=coverage)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fhery021_mine-sweeper&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fhery021_mine-sweeper&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fhery021_mine-sweeper)
