@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
     id "org.sonarqube" version "3.3"
 }
 
@@ -31,6 +32,9 @@ sonarqube {
         property "sonar.projectKey", "fhery021_mine-sweeper"
         property "sonar.organization", "fhery021"
         property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.java.coveragePlugin", "jacoco"
         property 'sonar.tests', "src/test"
+        property "sonar.java.test.binaries", "build/classes/java/test"
+        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml"
     }
 }
