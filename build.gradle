@@ -1,11 +1,13 @@
 plugins {
     id 'java'
-    id 'jacoco'
+    id 'checkstyle'
     id "org.sonarqube" version "3.3"
+    id 'jacoco'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -25,6 +27,11 @@ test {
     useJUnitPlatform()
 }
 
+checkstyle {
+    toolVersion '9.2'
+}
+
+
 jacocoTestReport {
     reports {
         xml.enabled true
@@ -38,10 +45,16 @@ sonarqube {
         property "sonar.projectKey", "fhery021_mine-sweeper"
         property "sonar.organization", "fhery021"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.java.coveragePlugin", "jacoco"
-        property 'sonar.tests', "src/test"
-        property "sonar.java.test.binaries", "build/classes/java/test"
-        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml"
-        property "sonar.junit.reportsPath", "app/build/test-results/*/TEST-*.xml"
     }
 }
+
+tasks.named('sonarqube').configure {
+    dependsOn test
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+}
+test.finalizedBy jacocoTestReport
